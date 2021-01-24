@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.688rem;
+}
+
+h1 {
+    font-family: 'PPT Serif';
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+h3 {
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+
+span {
+    font-family: 'PPT Serif';
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top:0;
+    right: 0%;
+}
+
+.container {
+    max-width: 935px;
+    margin: 110px auto 30px auto;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 96px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 160px;
+    gap: 64px;
+}
+
+.card {
+    position: relative;
+    max-width: 238px;   
+    flex: auto;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    display:block;
+    margin-bottom: 16px;
+}
+
+.grid .card:nth-child(3n+2) {
+    transform: translateY(25%);
+}
+
+footer p {
+    color: #A9A9A9;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.05rem;
+    text-align: center;
+}
+
+
+@media (max-width: 575px) {
+    .container {
+        margin: 80px 16px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 88px;
+        gap: 64px 24px;
+    }
+    .grid .card:nth-child(3n+2) {
+        transform: translateY(0);
+    }
+    .grid .card:nth-child(even) {
+        transform: translateY(15%);
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 40px;
+    }
+    .intro .description p {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+    }
+    span {
+        font-size: 0.625rempx;
+        line-height: 0.75rem;
+    }
+}
